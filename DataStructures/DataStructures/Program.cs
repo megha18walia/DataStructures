@@ -15,12 +15,19 @@ namespace Arrays
         {
             //Rotation
             
-            int[] input = { 2, 2, 4, 4, 0, 8, 9, 0 };
+            int[] input = { 16, 17, 4, 3, 5, 2 };
+            int[] index = { 3, 0, 1, 4, 6,7, 8, 2 , 5};
             Console.WriteLine("Input Array is - ");
             for (int i = 0; i < input.Length; i++)
             {
                 Console.Write(input[i] + " ");
             }
+
+            //Console.WriteLine("Input Index  is - ");
+            //for (int i = 0; i < index.Length; i++)
+            //{
+            //    Console.Write(index[i] + " ");
+            //}
             Console.WriteLine();
             //BasicRotation BR = new BasicRotation();
             ////int[] Res = BR.RotateArray(input, 2);
@@ -59,7 +66,15 @@ namespace Arrays
             //int[] Res = Obj.ArrangeNumbersWithoutSorting(input);
             //int[] Res = Obj.PrintZeroEnd(input);
             //int[] Res = Obj.PrintZeroRotationEnd(input);
-            int[] Res = Obj.ShiftAndDoubleArray(input);
+            //int[] Res = Obj.ShiftAndDoubleArray(input);
+            //int[] Res = Obj.ReturnInputArray(input, index);
+            //Console.WriteLine( Obj.PrintLargeNumber(input));
+            //int[] Res = Obj.ReArrangeIndex(input);
+            //int[] Res = Obj.RearrangePosNegArray(input);
+            //int[] Res = Obj.ArrangeMultiples(input);
+
+            //int[] Res = Obj.ShuffleArray(input);
+            int[] Res = Obj.ReturnReplaceArray(input);
             Console.WriteLine("Output Array is - ");
             for (int i = 0; i < Res.Length; i++)
             {
@@ -67,8 +82,10 @@ namespace Arrays
             }
             //int k = 5;
             //Console.WriteLine($"For k = {k} , Number Of Swaps required is : {Obj.ReturnSwapsForGroup(input, k)}");
+            //Obj.SequenceSortedArrayThree(input);
+            //Console.WriteLine(Obj.SubArrayLength(input));
+            //Obj.MaxProdSubArray(input);
 
-            
             Console.ReadLine();
 
 
